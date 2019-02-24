@@ -13,10 +13,15 @@ int main()
 	printf("sizeof(a) = %lu\n", sizeof(a));
 
 	bzero( a, sizeof(a) );     /*set a[i] = 0*/
-	memset(a, 0, sizeof(a));   /*set a[i] = 0*/
+	//memset(a, 0, sizeof(a));   /*set a[i] = 0*/
 
 	for(i = 0 ; i < 10; i++ )
+
 		printf("a[%d] = %d\n", i, a[i]);
+	char *str[] = {"ab" , "cd" , "ef" , "gh" , "ij"};
+	char *t;
+	t = (str+4)[-1];
+	printf("t = %s\n", t);
 
 	printf("executiong successfully\n");
 
